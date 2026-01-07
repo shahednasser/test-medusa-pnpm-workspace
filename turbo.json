@@ -1,41 +1,25 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [
-        ".next/**",
-        "!.next/cache/**",
-        "dist/**"
-      ]
+      "outputs": ["dist/**", ".next/**"]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
     "start": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": ["build"]
-    },
-    "lint": {
       "dependsOn": ["^build"]
     },
+    "lint": {
+      "outputs": []
+    },
     "test": {
-      "cache": false
-    },
-    "test:integration:http": {
-      "cache": false
-    },
-    "test:integration:modules": {
-      "cache": false
-    },
-    "test:unit": {
-      "cache": false
+      "outputs": []
     },
     "seed": {
-      "cache": false
+      "outputs": []
     }
   }
 }
