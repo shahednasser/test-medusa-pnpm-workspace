@@ -1,0 +1,21 @@
+{
+  "name": "test-storefront-hosting-pnpm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Medusa monorepo with pnpm and turbo",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.26.1"
+}

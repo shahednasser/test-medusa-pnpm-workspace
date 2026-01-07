@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Turbo
+.turbo/
+
+# Build outputs
+dist/
+.next/
+build/
+
+# Environment variables
+.env
+.env*.local
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
